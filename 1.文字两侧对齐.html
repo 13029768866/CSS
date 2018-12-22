@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文字两侧对齐</title>
+	</head>
+	<style>
+	.wzj{
+		border: 1px solid #000;
+		display: inline-block;
+		width: 100px;
+		height: 20px;	
+		line-height: 20px;
+		text-align: justify;				
+		overflow: hidden;
+	}
+	.wzj::after{
+		content: "";
+		display: inline-block;
+		width: 100%;
+		border: 1px solid red;
+	}
+	</style>
+	<body>
+		<span class="wzj">姓名</span> <br />
+		<span class="wzj">出生日期</span><br />
+		<span class="wzj">家庭住址</span>
+	</body>
+</html>
