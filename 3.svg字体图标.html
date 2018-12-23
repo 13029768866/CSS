@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg使用</title>
+</head>
+<style lang="css">
+  /* 引入通用css */
+  .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+    .icon{     
+      font-size: 100px;
+    }
+    .weixin{
+      color: green;
+    }
+    .qq{
+      color: skyblue;
+    }
+</style>
+<body>
+    <svg class="icon weixin" aria-hidden="true">
+        <use xlink:href="#icon-weixin"></use>
+    </svg>
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-weibo-copy"></use>
+    </svg>
+    <svg class="icon qq" aria-hidden="true">
+        <use xlink:href="#icon-qq"></use>
+    </svg>
+</body>
+</html>
+<script src="//at.alicdn.com/t/font_631061_jg9l766nlz.js"></script>

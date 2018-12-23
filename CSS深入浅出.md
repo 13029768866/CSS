@@ -24,3 +24,38 @@
 }
 ```
 
+### 1.2、文字溢出隐藏
+
+1.单行溢出隐藏
+
+```
+ .wzj {
+     width: 200px;
+     border: 1px solid red;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ 
+ <!-- 单行文字溢出隐藏 -->
+ <div class="wzj">不练剑了！不练剑了！不练剑了！</div>
+```
+
+2、多行文字溢出隐藏
+
+```
+   .wzj1 {
+      width: 200px;
+      border: 1px solid red;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    <!-- 多行文字溢出隐藏 -->
+    <!-- css multiline text ellipsis -->
+    <div class="wzj1">不练剑了！不练剑了！不练剑了！不练剑了！不练剑了！不练剑了！不练剑了！不练剑了！不练剑了！</div>
+```
+
+## 二、字体图标
+
