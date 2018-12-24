@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: inherit;text-decoration: none;
+}
+header{
+  position: relative;
+  padding: 10px;
+}
+header > button{
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.nav{
+  list-style: none;
+  display: none;
+  margin-top: 10px;
+}
+.nav.active{
+  display: flex;
+  color: green;
+  background-color: #ccc;
+  justify-content: space-between;
+}
+@media(min-width:451px){
+  header{
+    display: flex;
+    align-items: center;
+  }
+  .nav2{
+    flex: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+}
+

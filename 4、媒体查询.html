@@ -6,42 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>媒体查询demo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/media.css" media="(max-width:450px)">
+  <link rel="stylesheet" href="/css/mediaPC.css" media="(min-width:450px)">
 </head>
-<style>
-  @media(max-width:320px) {
-    body {
-      background-color: red;
-    }
-  }
-
-  @media(min-width:321px)and (max-width:375px) {
-    body {
-      background-color: orange;
-    }
-  }
-
-  @media(min-width:376px)and (max-width:425px) {
-    body {
-      background-color: green;
-    }
-  }
-
-  @media(min-width:426px)and (max-width:768px) {
-    body {
-      background-color: blue;
-    }
-  }
-
-  @media(min-width:768px) {
-    body {
-      background-color: purple;
-    }
-  }
-</style>
-
 <body>
-  123
+<header>
+    <div class="logo"></div>
+    <button id="wzj">菜单</button>
+    <ul id="xx" class="nav">
+      <li><a href="#">导航1</a></li>
+      <li><a href="#">导航2</a></li>
+      <li><a href="#">导航3</a></li>
+      <li><a href="#">导航4</a></li>
+      <li><a href="#">导航5</a></li>
+    </ul>
+    <ul  class="nav2">
+        <li><a href="#">导航1</a></li>
+        <li><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+</header>
 </body>
 
 </html>
+<script>
+  wzj.onclick = ()=>{  
+      xx.classList.toggle("active")
+  }
+</script>
