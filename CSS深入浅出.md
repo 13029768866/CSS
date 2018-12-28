@@ -79,13 +79,42 @@
 
 ## 三、Flex布局
 
-### 1、特点
+### 3.1、特点
 
 1. 与方向无关
 2. 空间自动分配，自动对齐
 3. 简单线性布局
 
-### 2、flex布局检测
+### 3.2、flex布局检测
 
 [flex测试游戏]: http://flexboxfroggy.com/#zh-cn
+
+## 四、BFC
+
+没有定义，只有特性/功能
+
+### 4.1、触发条件
+
+1. 浮动
+2. 定位
+3. 非块盒的块容器
+4. overflow不为visible
+
+## 五、手机专用自适应方案
+
+前端像素单位：px,em,rem,vh,vw
+
+### 5.1、rem
+
+rem是根元素font-size大小，就是html的font-size
+
+### 5.2、rem和em区别
+
+rem是font-size为参考，em参考是自身的font-size
+
+## 六、涟漪按钮实现
+
+```
+关键点
+```
 

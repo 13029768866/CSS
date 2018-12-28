@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>按钮优化</title>
+  <style>
+    .wzjBtn{
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      text-decoration: none;
+      background: none;
+      border: 0;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 16px;
+      font-size: 14px;
+      transition: all 1.5s;
+      overflow: hidden;
+      z-index: 0;
+      cursor: pointer;
+    }
+    .wzjBtn:hover{
+      background: #e5e5e5;
+    }
+    .wzjBtn:focus{
+      outline: 0;
+      background: #e5e5e5;
+    }
+    /* 涟漪效果实现 */
+    .wzjBtn > .circle{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transform: translate(-50%,-50%);
+      background-color: red;
+      visibility: hidden;
+      transition: all 0.5s;
+      z-index: -1;
+    }
+    .wzjBtn > .circle.active{
+      visibility: visible;
+      transform: scale(10);
+    }
+  </style>
+</head>
+<body>
+  <button class="wzjBtn">按钮
+    <span class="circle"></span>
+  </button>
+</body>
+</html>
+<script>
+
+</script>
